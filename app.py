@@ -1,6 +1,8 @@
 from flask import *
+from raytensor import RayTensor
 
 app = Flask(__name__)
+neural = RayTensor()
 
 
 @app.route('/')
