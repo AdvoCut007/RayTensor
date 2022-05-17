@@ -3,4 +3,4 @@ cache: pip
 install:
   - pip install -r requirements.txt
 script:
-  - rentensor.py
+  - python3 rentensor.py
