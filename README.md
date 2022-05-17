@@ -1,7 +1,7 @@
 [![RayTensor](https://github.com/AdvoCut007/RayTensor/actions/workflows/raytensor.yml/badge.svg)](https://github.com/AdvoCut007/RayTensor/actions/workflows/raytensor.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=RayTensor v 1.9)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=First+line+of+text;Second+line+of+text)](https://git.io/typing-svg)
 
 # Как это работает?
 
