@@ -38,7 +38,21 @@ def xray_result():
 
 @app.route('/ct-request', methods=['post', 'get'])
 def ct_scan():
-    return redirect('/in-development')
+    if request.method == 'POST':
+        image = request.files['image']
+        if image and allowed_file(image.filename):
+            image.save(upload_file)
+            return redirect('/ct-result')
+        else:
+            return redirect('/invalid-format')
+
+    return render_template('ct-request.html')
+
+
+@app.route('/ct-result')
+def ct_result():
+    predict = raytensor.ct_predict(upload_file)
+    return render_template('сt-result.html', predict=predict)
 
 
 @app.route('/in-development')
