@@ -77,8 +77,3 @@
 <p align="center">
 <img src="static/images/readme/result.png">
 </p>
-
-# Дополнительная информация:
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=AdvoCut007)](https://github.com/anuraghazra/github-readme-stats)
-
