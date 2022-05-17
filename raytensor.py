@@ -96,7 +96,18 @@ class RayTensor:
         predictions = model.predict(img_array)
         score = tf.nn.softmax(predictions[0])
 
+        if self.xray_class_names[np.argmax(score)] == 'PNEUMONIA':
+            self.xray_class_names[np.argmax(score)] = 'пневмония'
+        elif self.xray_class_names[np.argmax(score)] == 'NORMAL':
+            self.xray_class_names[np.argmax(score)] = 'всё хорошо'
+        elif self.xray_class_names[np.argmax(score)] == 'COVID19':
+            self.xray_class_names[np.argmax(score)] = 'Covid-19'
+        elif self.xray_class_names[np.argmax(score)] == 'TURBERCULOSIS':
+            self.xray_class_names[np.argmax(score)] = 'туберкулёз'
+
         return [
-            self.xray_class_names[np.argmax(score)],
-            round(100 * np.max(score), 2)
+            self.xray_class_names,
+            np.array(score * 100),
+            100 * np.max(score),
+            self.xray_class_names[np.argmax(score)]
         ]

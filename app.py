@@ -53,7 +53,7 @@ def invalid_format():
 
 @app.route('/about')
 def about():
-    return redirect('/in-development')
+    return render_template('about.html')
 
 
 if __name__ == '__main__':
