@@ -81,5 +81,5 @@
 # Дополнительная информация:
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AdvoCut007&layout=compact)](https://github.com/AdvoCut007/RayTensor)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
