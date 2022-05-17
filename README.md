@@ -49,7 +49,7 @@
 <img src="static/images/readme/flask.png"
 </p>
 
-## Frontend основан на стандартном HTML5 с привязкой к стилям Bootstrap, а также на шаблонизаторе Junja, обеспечивающий высокую читаемость кода за счёт сокращения его количества.
+## Frontend основан на стандартном HTML5 с привязкой к стилям Bootstrap, а также на втроенном в Flask шаблонизаторе Junja, обеспечивающий высокую читаемость кода за счёт сокращения его количества.
 
 <p align="center">
 <img src="static/images/readme/jinja.png">
