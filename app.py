@@ -1,8 +1,15 @@
 from flask import *
 from raytensor import RayTensor
 
+upload_file = 'static/images/test.jpg'
 app = Flask(__name__)
-neural = RayTensor()
+raytensor = RayTensor()
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
 
 
 @app.route('/')
@@ -10,27 +17,44 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/xray-scan')
+@app.route('/xray-request', methods=['post', 'get'])
 def xray_scan():
-    return redirect('/in_development')
+    if request.method == 'POST':
+        image = request.files['image']
+        if image and allowed_file(image.filename):
+            image.save(upload_file)
+            return redirect('/xray-result')
+        else:
+            return redirect('/invalid-format')
+
+    return render_template('xray-request.html')
 
 
-@app.route('/ct-scan')
+@app.route('/xray-result')
+def xray_result():
+    predict = raytensor.xray_predict(upload_file)
+    return render_template('xray-result.html', predict=predict)
+
+
+@app.route('/ct-request', methods=['post', 'get'])
 def ct_scan():
-    return redirect('/in_development')
+    return redirect('/in-development')
 
 
-@app.route('/about')
-def about():
-    return redirect('/in_development')
-
-
-@app.route('/in_development')
+@app.route('/in-development')
 def dev():
     return render_template('in_development.html')
 
 
+@app.route('/invalid-format')
+def invalid_format():
+    return render_template('error-invalidformat.html')
+
+
+@app.route('/about')
+def about():
+    return redirect('/in-development')
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
-
-# TODO: Связка с RayTensor, Доработка HTML, JS по возможности.
