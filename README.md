@@ -1,7 +1,7 @@
 [![RayTests](https://github.com/AdvoCut007/RayTensor/actions/workflows/raytests.yml/badge.svg)](https://github.com/AdvoCut007/RayTensor/actions/workflows/raytests.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=RayTensor+v+2.5)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=RayTensor+v+2.6)](https://git.io/typing-svg)
 
 # Что это?
 
@@ -46,7 +46,7 @@
 ### Вершину айсберга составляет веб-сервер, написанный на микрофреймворке Flask.
 
 <p align="center">
-<img src="static/images/readme/flask.png"
+<img src="static/images/readme/flask.png">
 </p>
 
 ## Frontend основан на стандартном HTML5 с привязкой к стилям Bootstrap, а также на встроенном в Flask шаблонизаторе Jinja, обеспечивающий высокую читаемость кода за счёт сокращения его количества.
@@ -56,6 +56,21 @@
 </p>
 
 # Использование
+
+## Установка:
+
+```shell
+git clone https://github.com/AdvoCut007/RayTensor
+cd RayTensor
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+## Запуск:
+
+```shell
+python3 app.py
+```
 
 ## При развёртывании сервера нас встречает минималистичная главная страница с основными гиперссылками. Кроме того, header может обеспечить Вам быстрое перемещение по сайту.
 
