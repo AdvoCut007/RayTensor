@@ -1,8 +1,8 @@
 [![RayTests](https://github.com/AdvoCut007/RayTensor/actions/workflows/raytests.yml/badge.svg)](https://github.com/AdvoCut007/RayTensor/actions/workflows/raytests.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-![version](https://img.shields.io/badge/version-2.8.9-blue)
+![version](https://img.shields.io/badge/version-2.9-blue)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=RayTensor+v+2.8.9)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=RayTensor)](https://git.io/typing-svg)
 
 # Что это?
 
